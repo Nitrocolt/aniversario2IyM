@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Años Contigo Max ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="drawingCanvas"></canvas>
+
+    <!-- Loader: pantalla de carga con gatito (emoji caminando) -->
+    <div id="loader" class="loader" aria-hidden="false">
+        <div class="loader-content">
+            <div class="loader-cat">
+                <span id="loader-cat-emoji" class="cat-emoji">🐈‍⬛</span>
+            </div>
+            <div class="loader-text" id="loader-text">Cargando<span id="loader-dots"></span></div>
+        </div>
+    </div>
+
+    <!-- Burger menu (esquina superior izquierda) -->
+    <button id="burger-btn" class="burger" aria-label="Abrir menú">☰</button>
+
+    <!-- Side menu: se desliza desde la izquierda -->
+    <nav id="side-menu" class="side-menu" aria-hidden="true">
+        <button id="close-menu" class="close-menu" aria-label="Cerrar menú">✕</button>
+        <ul class="menu-list">
+            <li class="menu-item" id="menu-memes" role="button" tabindex="0">Memes</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">💕 2 AÑOS CONTIGO 💕</div>
+            <p class="tagline">Max, te amo cada día más</p>
+            <p class="subtitle">Nuestros momentos especiales juntos</p>
+        </header>
+
+        <!-- Secciones de botones principales -->
+        <section class="sections">
+            <button class="card card-btn" data-section="gaming">
+                <div class="card-icon">🎮</div>
+                <h3>Videojuegos</h3>
+                <p>Nuestras aventuras juntos en el mundo gaming</p>
+            </button>
+
+            <button class="card card-btn" data-section="music">
+                <div class="card-icon">🎵</div>
+                <h3>Música</h3>
+                <p>Las canciones que nos acompañan</p>
+            </button>
+
+            <button class="card card-btn" data-section="zoo">
+                <div class="card-icon">🎬</div>
+                <h3>Películas</h3>
+                <p>Nuestras películas favoritas</p>
+            </button>
+
+            <button class="card card-btn" data-section="cats">
+                <div class="card-icon">🐱</div>
+                <h3>Amor por los Gatos</h3>
+                <p>Nuestro amor por los gatos</p>
+            </button>
+        </section>
+
+        <!-- Contenido dinámico -->
+        <div id="content-area" class="content-area"></div>
+
+        <div class="divider"></div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Con todo mi amor <span class="footer-credit">❤️ para Max ❤️</span></p>
+            <p style="margin-top: 10px; color: #555;">© 2025 Nuestro Aniversario | 2 años de amor y felicidad</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
